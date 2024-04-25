@@ -1,0 +1,9 @@
+.hover-text {
+  color: #000; /* Set the color of the link */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.hover-text:hover {
+  color: #333; /* Change color on hover */
+}
