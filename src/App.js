@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import VolcanoList from './Pages/VolcanoList';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
+import Volcanoes from './Pages/Volcanoes';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/volcano-list" element={<VolcanoList />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/volcanoes/:id" element={<Volcanoes />} />
         </Routes>
       </div>
     </Router>

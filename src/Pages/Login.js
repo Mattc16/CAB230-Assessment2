@@ -18,7 +18,13 @@ function Login() {
     });
 
     const data = await response.json();
-    setMessage(data.message);
+    
+    if (response.ok) {
+      setMessage('Login successful!');
+      localStorage.setItem('token', data.token);
+    } else {
+      setMessage(data.message);
+    }
   };
 
     return (

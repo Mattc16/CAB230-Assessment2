@@ -12,23 +12,23 @@ function Home() {
     const images = [
         {
           src: image1,
-          caption: 'Caption 1',
+          caption: 'Explore Volcanoes Worldwide: Discover volcanoes acros the globe by searching via country or population density.',
         },
         {
           src: image2,
-          caption: 'Caption 2',
+          caption: 'Detailed Volcano Profiles: Dive deep into individual volcano information, including history, activity, and geographic location.',
         },
         {
           src: image3,
-          caption: 'Caption 3',
+          caption: 'Interactive Maps: Visualise volcano locations with interactive maps, providiing context and geographic insight.',
         },
         {
           src: image4,
-          caption: 'Caption 4',
+          caption: 'Population Density Analysis: Gain perspective on the surrounding population with density graphs, enchancing your understanding of volcanic impact.',
         },
         {
           src: image5,
-          caption: 'Caption 5',
+          caption: 'Personalised Exploration: Register for a free account to access exclusive features.',
         }
       ];
     
