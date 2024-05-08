@@ -65,7 +65,7 @@ function VolcanoList() {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'white' }}>
         <header style={{ backgroundColor: '#3498db', padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h1 style={{ fontFamily: 'Arial, sans-serif', fontSize: '24px', fontWeight: '400', margin: '0' }}>Volcano Explorer</h1>
+          <h1 style={{ fontFamily: 'Arial, sans-serif', fontSize: '24px', fontWeight: '400', margin: '0' }}>Volcano List</h1>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Link to="/home" className="hover-text" style={{ fontSize: '20px', marginRight: '20px' }}>Home</Link>
             <Link to="/register" className="hover-text" style={{ fontSize: '20px', marginRight: '20px' }}>Register</Link>

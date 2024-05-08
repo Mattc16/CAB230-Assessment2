@@ -13,13 +13,12 @@ function Volcanoes() {
   useEffect(() => {
     const token = localStorage.getItem('token');
 
-    fetch(`http://4.237.58.241:3000/volcano/${id}`, {
-    headers: {
-      'Authorization': `Bearer ${token}`
-    }
-    })
-    .then(response => response.json())
-    .then(data => setVolcano(data));
+    const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+
+    fetch(`http://4.237.58.241:3000/volcano/${id}`, { headers })
+      .then(response => response.json())
+      .then(data => setVolcano(data))
+      .catch(error => console.error('Error:', error));
   }, [id]);
 
   useEffect(() => {
@@ -109,9 +108,10 @@ function Volcanoes() {
           )}
         </div>
 
-        { /* bar chart goes here */ }
-        <div style={{ flex: '1', padding: '25px' }}>
-          <canvas ref={chartRef} />
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ flex: '1', padding: '25px', width: '500px', height: '500px' }}>
+            <canvas ref={chartRef}/>
+          </div>
         </div>
         
 
